@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">No.5972's First App!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="button1_name">Click!</string>
+    <string name="action_settings">Settings</string>
+    <string name="button2_name">Close</string>
+    <string name="text2_name">This is the first app made by No.5972 myself! HAHAHA! </string>
+
+</resources>
