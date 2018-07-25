@@ -1,5 +1,4 @@
 ﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<style>td { border: 1px solid #000; }</style>
 <?php
 header("Content-type: text/html;charset=utf-8");
 $con = mysql_connect("localhost:3306","root","root");
