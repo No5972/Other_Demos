@@ -1,10 +1,10 @@
-#MapReduce Sample
+# MapReduce Sample
 This sample uses the MapReduce API to Filter Customer comment with rating "1"
 
-##Input File
+## Input File
 myinput/sample-filter.txt
 
-        10/11/2012,r..@yahoo.com,3,I was really satisfied with the customer service at the store
+	10/11/2012,r..@yahoo.com,3,I was really satisfied with the customer service at the store
 	09/12/2012,x..@yahoo.com,3,Basic needs met at the store
 	10/11/2012,r.@gmail.com,4,Excellent
 	09/12/2012,x..@hotmail.com,5,Great Collection
