@@ -8,7 +8,7 @@ myinput/sample-filter.txt
 	09/12/2012,x..@yahoo.com,3,Basic needs met at the store
 	10/11/2012,r.@gmail.com,4,Excellent
 	09/12/2012,x..@hotmail.com,5,Great Collection
-	01/02/2013,dan...@xyz.com,1,Horrible service at the store
+	01/02/2013,dan...@xyz.com,1,bad service
 	09/12/2012,zz..@hotmail.com,5,Great Collection
 	01/02/2013,d...@gmail.com,4,Good collection and service at the store
 
