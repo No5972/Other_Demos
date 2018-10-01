@@ -1,4 +1,4 @@
-// tuolaji.cpp : Defines the entry point for the console application.
+ï»¿// tuolaji.cpp : Defines the entry point for the console application.
 //
 
 #include <stdio.h>
@@ -16,11 +16,11 @@ int main(int argc, char* argv[])
 	int i=0;
 	while (true) {
 		for (int k=0;k<i;k++) printf(" ");
-		printf("        _______  ¡ð\n");
+		printf("        _______  â—‹\n");
 		for (k=0;k<i;k++) printf(" ");
-		printf("        |     | _¨O¡¥¡¥£Ü\n");
+		printf("        |     | _âˆ£Ë‰Ë‰ï¼¼\n");
 		for (k=0;k<i;k++) printf(" ");
-		printf("©~©~©~©~¡¥¡ò¡¥¡¥¨R¨R¨R¨R¡¥¡ò\n");
+		printf("ï¹¡ï¹¡ï¹¡ï¹¡Ë‰â—ŽË‰Ë‰â‰§â‰§â‰§â‰§Ë‰â—Ž\n");
 		delay(200);
 		system("cls");
 		i++;
