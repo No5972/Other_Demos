@@ -7,7 +7,7 @@
 extern "C"
 
 void delay(long miliseconds) {
-	long t1=clock(),t2;
+	long t1=clock(),t2=0;
 	while (t2<t1+miliseconds) t2=clock();
 }
 
