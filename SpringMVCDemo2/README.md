@@ -1,11 +1,11 @@
-# NOTE: Available only on tomcat 7 or higher, Spring 5.1.0 or higher, JDK 1.8 or higher
-Passed the test under CentOS 6.5
+# NOTE: Available only on tomcat 7, Spring 3.2.0, JDK 1.7
+Passed the test under Windows 10 1511
 
-Spring Distribution: http://101.110.118.47/maven.springframework.org/release/org/springframework/spring/5.1.0.RELEASE/spring-framework-5.1.0.RELEASE-dist.zip
+Spring Distribution: http://101.110.118.47/maven.springframework.org/release/org/springframework/spring/3.2.0.RELEASE/spring-framework-3.2.0.RELEASE-dist.zip
 
 some notes:
 1. Import Spring JARs to <b>WebContent/WEB-INF/lib</b> directory!
-2. Edit <a href="https://github.com/No5972/Other_Demos/blob/master/SpringMVCDemo/springmvc/WebContent/WEB-INF/web.xml">web.xml</a> 
+2. Edit <a href="https://github.com/No5972/Other_Demos/blob/master/SpringMVCDemo2/SpringMVCDemo2/WebContent/WEB-INF/web.xml">web.xml</a> 
 ```
 <servlet>
         <servlet-name>HelloWeb</servlet-name>
@@ -28,7 +28,7 @@ some notes:
   <param-value>/WEB-INF/HelloWeb-servlet.xml</param-value>  
 </context-param>
 ```
-3. Edit <a href="https://github.com/No5972/Other_Demos/blob/master/SpringMVCDemo/springmvc/WebContent/WEB-INF/HelloWeb-servlet.xml">Spring MVC XML</a>
+3. Edit <a href="https://github.com/No5972/Other_Demos/blob/master/SpringMVCDemo2/SpringMVCDemo2/WebContent/WEB-INF/HelloWeb-servlet.xml">Spring MVC XML</a>
 ```
    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
    <context:component-scan base-package="io.github.no5972.springmvc1" />
