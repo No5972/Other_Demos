@@ -3,7 +3,8 @@ Passed the test under CentOS 6.5
 Spring Distribution: http://101.110.118.47/maven.springframework.org/release/org/springframework/spring/5.1.0.RELEASE/spring-framework-5.1.0.RELEASE-dist.zip
 
 some notes:
-1. Edit <a href="https://github.com/No5972/Other_Demos/blob/master/SpringMVCDemo/springmvc/WebContent/WEB-INF/web.xml">web.xml</a> 
+1. Import Spring JARs to <b>WebContent/WEB-INF/lib</b> directory!
+2. Edit <a href="https://github.com/No5972/Other_Demos/blob/master/SpringMVCDemo/springmvc/WebContent/WEB-INF/web.xml">web.xml</a> 
 ```
 <servlet>
         <servlet-name>HelloWeb</servlet-name>
@@ -26,7 +27,7 @@ some notes:
   <param-value>/WEB-INF/HelloWeb-servlet.xml</param-value>  
 </context-param>
 ```
-2. Edit <a href="https://github.com/No5972/Other_Demos/blob/master/SpringMVCDemo/springmvc/WebContent/WEB-INF/HelloWeb-servlet.xml">Spring MVC XML</a>
+3. Edit <a href="https://github.com/No5972/Other_Demos/blob/master/SpringMVCDemo/springmvc/WebContent/WEB-INF/HelloWeb-servlet.xml">Spring MVC XML</a>
 ```
    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
    <context:component-scan base-package="io.github.no5972.springmvc1" />
@@ -37,4 +38,4 @@ some notes:
    </bean>
 ```
 
-3. Edit Java Codes! (Use annotation method)
+4. Edit Java Codes! (Use annotation method)
