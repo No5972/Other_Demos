@@ -7,4 +7,4 @@ some notes:
 
 Create, Retrieve, Update, and Delete
 
-![selfjava](https://github.com/No5972/Other_Demos/SpringMVCMyBatisDemo2/blob/master/selfjava.png)
+![selfjava](https://github.com/No5972/Other_Demos/blob/master/SpringMVCMyBatisDemo2/selfjava.png)
