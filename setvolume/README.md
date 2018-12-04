@@ -1,0 +1,1 @@
+# This is to declare that this is not a hack tool but only to set sound volume and the screen brightness of the OS, and the soft switch of the monitor.
