@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cpp1", "Cpp1.vcxproj", "{FD332DE2-2117-40D2-AE0E-6837264EA301}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SetVolumeGUI", "SetVolumeGUI\SetVolumeGUI.vcxproj", "{5285F250-0FF0-40E8-A1F8-86F7D4E59DCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD332DE2-2117-40D2-AE0E-6837264EA301}.Debug|x64.ActiveCfg = Debug|Win32
+		{FD332DE2-2117-40D2-AE0E-6837264EA301}.Debug|x86.ActiveCfg = Debug|Win32
+		{FD332DE2-2117-40D2-AE0E-6837264EA301}.Debug|x86.Build.0 = Debug|Win32
+		{FD332DE2-2117-40D2-AE0E-6837264EA301}.Release|x64.ActiveCfg = Release|Win32
+		{FD332DE2-2117-40D2-AE0E-6837264EA301}.Release|x86.ActiveCfg = Release|Win32
+		{FD332DE2-2117-40D2-AE0E-6837264EA301}.Release|x86.Build.0 = Release|Win32
+		{5285F250-0FF0-40E8-A1F8-86F7D4E59DCC}.Debug|x64.ActiveCfg = Debug|x64
+		{5285F250-0FF0-40E8-A1F8-86F7D4E59DCC}.Debug|x64.Build.0 = Debug|x64
+		{5285F250-0FF0-40E8-A1F8-86F7D4E59DCC}.Debug|x86.ActiveCfg = Debug|Win32
+		{5285F250-0FF0-40E8-A1F8-86F7D4E59DCC}.Debug|x86.Build.0 = Debug|Win32
+		{5285F250-0FF0-40E8-A1F8-86F7D4E59DCC}.Release|x64.ActiveCfg = Release|x64
+		{5285F250-0FF0-40E8-A1F8-86F7D4E59DCC}.Release|x64.Build.0 = Release|x64
+		{5285F250-0FF0-40E8-A1F8-86F7D4E59DCC}.Release|x86.ActiveCfg = Release|Win32
+		{5285F250-0FF0-40E8-A1F8-86F7D4E59DCC}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
