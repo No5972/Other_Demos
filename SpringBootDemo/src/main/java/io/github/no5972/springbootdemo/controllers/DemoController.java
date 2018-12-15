@@ -8,8 +8,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import io.github.no5972.springbootdemo.models.OperationResult;
 
 @Controller
+@RequestMapping("/springbootdemo")
 public class DemoController {
-	@RequestMapping("/springbootdemo/getResult")
+	@RequestMapping("/getResult")
 	public @ResponseBody OperationResult getResult() {
 		OperationResult result = new OperationResult();
 		result.setCode(0);
@@ -17,13 +18,13 @@ public class DemoController {
 		return result;
 	}
 	
-	@RequestMapping("/springbootdemo/getAnotherResult")
+	@RequestMapping("/getAnotherResult")
 	public String getAnotherResult(ModelMap model) {
 		model.addAttribute("result", "test");
 		return "result";
 	}
 	
-	@RequestMapping("/springbootdemo/login1")
+	@RequestMapping("/login1")
 	public @ResponseBody OperationResult getLogin(String username, String password) {
 		OperationResult result = new OperationResult();
 		if (username.equals("wujiuqier") && password.equals("password")) {
