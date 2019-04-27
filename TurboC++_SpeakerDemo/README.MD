@@ -1,2 +1,5 @@
-×¢Òâ£º³ÌĞòĞèÔÚDOSBOX»òÕß´¿DOS£¨ĞéÄâ»úµÈ£©ÏÂÊ¹ÓÃTurbo C++À´±àÒëÔËĞĞ¡£
+æ³¨æ„ï¼šç¨‹åºéœ€åœ¨DOSBOXæˆ–è€…çº¯DOSï¼ˆè™šæ‹Ÿæœºç­‰ï¼‰ä¸‹ä½¿ç”¨Turbo C++æ¥ç¼–è¯‘è¿è¡Œã€‚
+
 Note: Source code should be compiled with Turbo C++ under DOSBOX or pure DOS (like Virtual Machine, etc. ).
+
+ç‰¹åˆ«é¸£è°¢ Special Thanks: ![https://github.com/xfgryujk/mml2beep](https://img.shields.io/badge/Repository-xfgryujk%2Fmml2beep-green.svg)
