@@ -84,7 +84,8 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
     return DefWindowProc(hwnd, uMsg, wParam, lParam);
 }
 ```
-您也可以在这里下载完整的Visual Studio项目:
+您也可以在这里下载完整的Visual Studio项目:[Windows Hello World Sample](https://docs.microsoft.com/zh-cn/windows/desktop/learnwin32/windows-hello-world-sample)
+
 如果可行的话这里给出对这些代码的简要说明.后续的话题将详细介绍这些代码.
 1. wWinMain是程序的入口.程序开始的时候会注册一些关于应用程序窗口的一些行为信息.其中最重要的信息之一是函数的地址,这里叫做WindowProc. 这个函数定义了窗口的行为:外观,如何与用户交互,以及其他.
 2. 接下来程序会创建这个窗口,并开始接受用于辨识这个窗口的句柄.
