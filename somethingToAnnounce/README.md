@@ -90,6 +90,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 1. wWinMain是程序的入口.程序开始的时候会注册一些关于应用程序窗口的一些行为信息.其中最重要的信息之一是函数的地址,这里叫做WindowProc. 这个函数定义了窗口的行为:外观,如何与用户交互,以及其他.
 2. 接下来程序会创建这个窗口,并开始接受用于辨识这个窗口的句柄.
 3. 如果窗口成功创建的话程序会进入一个while循环.在用户关闭窗口并退出程序之前程序将保持运行这个循环.
+
 注意程序并没有明确调用WindowProc函数,即使我们说过这是定义的最重要的应用程序逻辑.Windows是通过一系列的消息来与您的程序交流的,这个while循环里面的代码是做这个事情的.程序每次调用DispatchMessage函数的时候会间接让Windows调用WindowProc函数,每次对应一条消息.
 
 原文链接:[Module 1. Your First Windows Program](https://docs.microsoft.com/en-us/windows/desktop/learnwin32/your-first-windows-program)
