@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Keyboard Canvas Demo</title>
+<style>
+	body {
+		padding: 0;
+		margin: 0;
+		background-color: rgba(0, 0, 0, 0.1);
+		overflow: hidden;
+	}
+
+	canvas {
+		display: block;
+		margin: 200px auto;
+		font-family: '';
+	}
+
+	
+</style>
+</head>
+<body>
+<canvas id="gameMain" width="800" height="600"></canvas>
+<script>
+let canvas = document.querySelector("#gameMain");
+let ctx = canvas.getContext("2d");
+
+let screenW = 800;
+let screenH = 600;
+let sightW = 500;
+let sightH = 600;
+
+let currentLevel = 0;
+let life = 99;
+let score = 0;
+let weaponLevel = 1;
+let bomb = 10; 
+	
+var Player = function () {
+	this.x = 230;
+	this.y = 560;
+	this.isMovingDown = false;
+	this.isMovingUp = false;
+	this.isMovingLeft = false;
+	this.isMovingRight = false;
+}
+
+var PlayerSingleDamaku = function () {
+	this.type = 0; // appearance
+	this.relativeX = 0; // relation from the center
+	this.relativeY = 0;
+	this.x = 0; // current position
+	this.y = 0;
+	this.speed = 0;
+	this.directionAngle = 0; // angle from the positive X axis 0-360
+}
+
+var PlayerDamaku = function () {
+	this.damakuInterval = 0;
+	this.damakus = [];
+}
+
+var Boss = function () {
+	this.x = 0;
+	this.y = 0;
+	this.mapLocationX = 0;
+	this.mapLocationY = 0;
+	this.damakuInterval = 0;
+	this.damakus = [];
+}
+
+var EnemySingleDamaku = function () {
+	this.type = 0; // appearance
+	this.relativeX = 0; // relation from the center
+	this.relativeY = 0;
+	this.x = 0; // current position
+	this.y = 0;
+	this.speed = 0;
+	this.directionAngle = 0; // angle from the positive X axis 0-360
+}
+
+var SmallMonster = function () {
+	this.x = 0;
+	this.y = 0;
+	this.mapLocationX = 0;
+	this.mapLocationY = 0;
+	this.damakuInterval = 0;
+	this.damakus = [];
+}
+
+
+Player.prototype.init = function () {
+	var that = this;
+	document.onkeydown = function (e) {
+		if(e.keyCode == 40){
+			that.isMovingDown = true;
+		}else if(e.keyCode == 37){
+			that.isMovingLeft = true;
+		}else if(e.keyCode == 39){
+			that.isMovingRight = true;
+		}else if(e.keyCode == 38){
+			that.isMovingUp = true;
+		}
+	}
+	
+	document.onkeyup = function (e) {
+		if(e.keyCode == 40){
+			that.isMovingDown = false;
+		}else if(e.keyCode == 37){
+			that.isMovingLeft = false;
+		}else if(e.keyCode == 39){
+			that.isMovingRight = false;
+		}else if(e.keyCode == 38){
+			that.isMovingUp = false;
+		}
+	}
+}
+
+var player = new Player();
+player.init();
+
+	
+function init(){
+    draw();
+}
+	
+function drawPlayer(ctx) {
+	ctx.beginPath();
+	ctx.arc(player.x,player.y,40,0,2*Math.PI);
+	ctx.stroke();
+}
+
+function drawHud(ctx) {
+	ctx.beginPath();
+	ctx.strokeRect(0, 0, 800, 600);
+	ctx.fillRect(500,0,300,600);
+        
+	ctx.fillStyle = "white";
+	ctx.font = "bold 20px Constantia";
+	ctx.fillText("HiScore", 530, 100);
+	ctx.fillText("Score", 530, 130);
+	ctx.fillText("Player", 530, 160);
+	ctx.fillText("Graze", 530, 190);
+
+	ctx.fillText("Power", 530, 250);
+	ctx.fillText("Faith", 530, 280);
+	ctx.fillText("Point", 530, 310);
+
+	ctx.fillText("Fantasy Touhou", 580, 530)
+
+	ctx.font = "50px Kaiti";
+        ctx.fillText("幻想東方" , 550, 500)
+	ctx.stroke();
+}
+
+function draw(){
+	
+	ctx.clearRect(0, 0, 800, 600); //清除所有内容
+    ctx.save();
+	
+	if (player.isMovingLeft && player.x > 0) player.x-=2;
+	if (player.isMovingRight && player.x < sightW) player.x+=2;
+	if (player.isMovingUp && player.y > 0) player.y-=2;
+	if (player.isMovingDown && player.y < sightH) player.y+=2;
+
+	drawPlayer(ctx);
+	// drawPlayerDamaku(ctx);
+	// drawEnemyDamaku(ctx)
+	// drawSmallMonsters(ctx);
+	// drawBoss(ctx);
+	drawHud(ctx);
+    
+    ctx.restore();
+    requestAnimationFrame(draw);
+}
+
+
+init();
+</script>
+</body>
+</html>
