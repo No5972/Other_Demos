@@ -33,6 +33,7 @@ let sightH = 600;
 
 let currentLevel = 0;
 let life = 99;
+let highscore = 0;
 let score = 0;
 let weaponLevel = 1;
 let bomb = 10; 
@@ -139,15 +140,25 @@ function drawHud(ctx) {
 	ctx.fillStyle = "white";
 	ctx.font = "bold 20px Constantia";
 	ctx.fillText("HiScore", 530, 100);
+	ctx.fillText(highscore++, 700, 100);
 	ctx.fillText("Score", 530, 130);
+	ctx.fillText(score++, 700, 130);
 	ctx.fillText("Player", 530, 160);
+	for (var i = 0; i < life; i++) {
+		ctx.fillText("★", 600 + i * 20, 160);
+	}
 	ctx.fillText("Graze", 530, 190);
 
 	ctx.fillText("Power", 530, 250);
+	ctx.fillText(weaponLevel, 700, 250);
 	ctx.fillText("Faith", 530, 280);
+	ctx.fillText(bomb, 700, 280);
 	ctx.fillText("Point", 530, 310);
 
-	ctx.fillText("Fantasy Touhou", 580, 530)
+	ctx.fillText("Fantasy Touhou", 580, 530);
+	ctx.font = "bold 9px Constantia";
+	ctx.fillText("© No.5972", 510, 570);
+	ctx.fillText("Materials courtesy of Touhou Project, Team Shanghai Alice.", 510, 590);
 
 	ctx.font = "50px Kaiti";
         ctx.fillText("幻想東方" , 550, 500)
