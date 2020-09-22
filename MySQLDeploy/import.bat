@@ -1,6 +1,6 @@
 @echo off
 set input=
-set /p input=输入数据库名称:
+set /p input=输入新建数据库名称:
 set username=
 set /p username=输入数据库用户名:
 set "psCommand=powershell -Command "$pword = read-host '输入数据库密码' -AsSecureString ; ^
