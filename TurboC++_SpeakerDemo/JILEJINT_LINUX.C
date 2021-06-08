@@ -45,6 +45,8 @@ int main() {
 		printf("%d ", k[i][0]);
 		ioctl(STDOUT_FILENO, KIOCSOUND, k[i][0] == 0 ? 0 : 1193180/k[i][0]);
 		usleep(k[i][1] * 1000);
+		ioctl(STDOUT_FILENO, KIOCSOUND, 0);
+		usleep(10000);
 	}
 	ioctl(STDOUT_FILENO, KIOCSOUND, 0);
 	return 0;
